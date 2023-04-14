@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.SpringBoot_webSocketChatting.Mapper.MemberMapper">
+
+    <!-- SQL 쿼리문 등록 -->
+    <select id="selectById" parameterType="long" resultType="com.example.SpringBoot_webSocketChatting.Entity.Member">
+        SELECT * FROM member WHERE idAuto = #{id}
+    </select>
+
+</mapper>
